@@ -1,0 +1,16 @@
+package gr.elenpapaio.CollegeREST.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.Date;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+
+public class AchievedMark {
+    private Date date;
+    private int mark;
+}
