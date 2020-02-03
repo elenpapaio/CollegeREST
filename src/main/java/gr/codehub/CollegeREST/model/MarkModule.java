@@ -1,4 +1,4 @@
-package gr.elenpapaio.CollegeREST.model;
+package gr.codehub.CollegeREST.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

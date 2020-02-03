@@ -1,17 +1,20 @@
-package gr.elenpapaio.CollegeREST.repository;
+package gr.codehub.CollegeREST.repository;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import gr.elenpapaio.CollegeREST.model.College;
+import gr.codehub.CollegeREST.model.College;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.util.ResourceUtils;
 
-import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 
+/**
+ * retrieve data for College
+ * college.json in main/resources is used instead of a database
+ */
 @Data
 @NoArgsConstructor
-
 public class CollegeRepo {
     private College college;
 
@@ -21,7 +24,7 @@ public class CollegeRepo {
         mapper.setDateFormat(df);
 
         try {
-            college = mapper.readValue(new File(filename), College.class);
+            college = mapper.readValue(ResourceUtils.getFile(filename), College.class);
         } catch (IOException e) {
             e.printStackTrace();
         }

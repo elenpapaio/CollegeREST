@@ -1,4 +1,4 @@
-package gr.elenpapaio.CollegeREST.model;
+package gr.codehub.CollegeREST.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,8 +8,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Course {
+public class Module {
     private String name;
-    private String location;
-    private Cohort cohort;
+    private Course course;
+    private String assignedTutor;
+    private ModuleType moduleType;
 }

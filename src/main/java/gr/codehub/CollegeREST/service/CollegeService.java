@@ -1,27 +1,30 @@
-package gr.elenpapaio.CollegeREST.service;
+package gr.codehub.CollegeREST.service;
 
-import gr.elenpapaio.CollegeREST.model.AchievedMark;
-import gr.elenpapaio.CollegeREST.model.Module;
-import gr.elenpapaio.CollegeREST.model.Course;
-import gr.elenpapaio.CollegeREST.model.Student;
-import gr.elenpapaio.CollegeREST.repository.CollegeRepo;
+import gr.codehub.CollegeREST.model.Module;
+import gr.codehub.CollegeREST.model.Course;
+import gr.codehub.CollegeREST.model.Student;
+import gr.codehub.CollegeREST.repository.CollegeRepo;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * service containing the logic for filtering and obtaining data
+ * for the needs of CollegeController
+ */
 @Service
 public class CollegeService {
 
     public List<Course> getCourses(){
-        return new CollegeRepo("college.json").getCollege().getStudents()
+        return new CollegeRepo("classpath:college.json").getCollege().getStudents()
                 .stream()
                 .map(s -> s.getCourse())
                 .collect(Collectors.toList());
     }
 
     public List<Student> getStudents(){
-        return new CollegeRepo("college.json").getCollege().getStudents();
+        return new CollegeRepo("classpath:college.json").getCollege().getStudents();
     }
 
     public Student getStudentId(int id){

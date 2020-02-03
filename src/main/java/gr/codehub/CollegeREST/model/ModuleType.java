@@ -1,4 +1,4 @@
-package gr.elenpapaio.CollegeREST.model;
+package gr.codehub.CollegeREST.model;
 
 public enum ModuleType {
     MANDATORY, OPTIONAL, SPECIAL
