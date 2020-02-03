@@ -8,7 +8,7 @@
 		<version>2.2.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>gr.codehub</groupId>
+	<groupId>gr.codehub.college</groupId>
 	<artifactId>CollegeREST</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>CollegeREST</name>

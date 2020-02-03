@@ -1,7 +1,7 @@
-package gr.codehub.CollegeREST.repository;
+package gr.codehub.college.repository;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import gr.codehub.CollegeREST.model.College;
+import gr.codehub.college.model.College;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.util.ResourceUtils;

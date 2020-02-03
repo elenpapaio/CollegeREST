@@ -1,9 +1,9 @@
-package gr.codehub.CollegeREST.service;
+package gr.codehub.college.service;
 
-import gr.codehub.CollegeREST.model.Module;
-import gr.codehub.CollegeREST.model.Course;
-import gr.codehub.CollegeREST.model.Student;
-import gr.codehub.CollegeREST.repository.CollegeRepo;
+import gr.codehub.college.model.Module;
+import gr.codehub.college.model.Course;
+import gr.codehub.college.model.Student;
+import gr.codehub.college.repository.CollegeRepo;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
